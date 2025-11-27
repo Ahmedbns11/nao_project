@@ -1,0 +1,30 @@
+[0mCMake Deprecation Warning at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:37 (message):
+  Package 'gazebo_dev' is deprecated (This package has been deprecated as of
+  January 2025 with Gazebo classic 11 reaching
+
+        end-of-life. Users are highly encouraged to migrate to the new Gazebo
+        using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+Call Stack (most recent call first):
+  CMakeLists.txt:26 (find_package)
+
+[0m
+[31mCMake Error at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package):
+  By not providing "Findgazebo.cmake" in CMAKE_MODULE_PATH this project has
+  asked CMake to find a package configuration file provided by "gazebo", but
+  CMake did not find one.
+
+  Could not find a package configuration file provided by "gazebo" with any
+  of the following names:
+
+    gazeboConfig.cmake
+    gazebo-config.cmake
+
+  Add the installation prefix of "gazebo" to CMAKE_PREFIX_PATH or set
+  "gazebo_DIR" to a directory containing one of the above files.  If "gazebo"
+  provides a separate development package or SDK, be sure it has been
+  installed.
+Call Stack (most recent call first):
+  /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:47 (include)
+  CMakeLists.txt:26 (find_package)
+
+[0m

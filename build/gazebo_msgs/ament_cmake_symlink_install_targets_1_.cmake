@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ahmed/nao_ws/build/gazebo_msgs/rosidl_generator_py/gazebo_msgs/gazebo_msgs_s__rosidl_typesupport_introspection_c.so" "TARGETS" "gazebo_msgs_s__rosidl_typesupport_introspection_c" "DESTINATION" "lib/python3.12/site-packages/gazebo_msgs")

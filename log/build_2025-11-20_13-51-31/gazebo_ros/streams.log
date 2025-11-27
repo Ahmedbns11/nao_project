@@ -1,0 +1,54 @@
+[0.006s] Invoking command in '/home/ahmed/nao_ws/build/gazebo_ros': AMENT_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ahmed/nao_ws/src/gazebo_ros_pkgs/gazebo_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ahmed/nao_ws/install/gazebo_ros
+[0.043s] -- The C compiler identification is GNU 13.3.0
+[0.082s] -- The CXX compiler identification is GNU 13.3.0
+[0.094s] -- Detecting C compiler ABI info
+[0.152s] -- Detecting C compiler ABI info - done
+[0.159s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.159s] -- Detecting C compile features
+[0.159s] -- Detecting C compile features - done
+[0.166s] -- Detecting CXX compiler ABI info
+[0.234s] -- Detecting CXX compiler ABI info - done
+[0.241s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.241s] -- Detecting CXX compile features
+[0.241s] -- Detecting CXX compile features - done
+[0.243s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.349s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.405s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.426s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.451s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.460s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.472s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.485s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.496s] -- Found gazebo_dev: 3.9.0 (/home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake)
+[0.496s] [0mCMake Deprecation Warning at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:37 (message):
+[0.497s]   Package 'gazebo_dev' is deprecated (This package has been deprecated as of
+[0.497s]   January 2025 with Gazebo classic 11 reaching
+[0.497s] 
+[0.497s]         end-of-life. Users are highly encouraged to migrate to the new Gazebo
+[0.497s]         using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+[0.497s] Call Stack (most recent call first):
+[0.497s]   CMakeLists.txt:26 (find_package)
+[0.497s] 
+[0.497s] [0m
+[0.503s] [31mCMake Error at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package):
+[0.504s]   By not providing "Findgazebo.cmake" in CMAKE_MODULE_PATH this project has
+[0.504s]   asked CMake to find a package configuration file provided by "gazebo", but
+[0.504s]   CMake did not find one.
+[0.504s] 
+[0.504s]   Could not find a package configuration file provided by "gazebo" with any
+[0.504s]   of the following names:
+[0.504s] 
+[0.504s]     gazeboConfig.cmake
+[0.504s]     gazebo-config.cmake
+[0.504s] 
+[0.504s]   Add the installation prefix of "gazebo" to CMAKE_PREFIX_PATH or set
+[0.504s]   "gazebo_DIR" to a directory containing one of the above files.  If "gazebo"
+[0.504s]   provides a separate development package or SDK, be sure it has been
+[0.504s]   installed.
+[0.504s] Call Stack (most recent call first):
+[0.504s]   /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:47 (include)
+[0.505s]   CMakeLists.txt:26 (find_package)
+[0.505s] 
+[0.505s] [0m
+[0.505s] -- Configuring incomplete, errors occurred!
+[0.508s] Invoked command in '/home/ahmed/nao_ws/build/gazebo_ros' returned '1': AMENT_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ahmed/nao_ws/src/gazebo_ros_pkgs/gazebo_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ahmed/nao_ws/install/gazebo_ros
