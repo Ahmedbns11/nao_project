@@ -1,0 +1,10 @@
+[0.000000] (-) TimerEvent: {}
+[0.000533] (-) JobUnselected: {'identifier': 'gazebo_dev'}
+[0.000821] (-) JobUnselected: {'identifier': 'gazebo_msgs'}
+[0.000842] (-) JobUnselected: {'identifier': 'gazebo_plugins'}
+[0.000856] (-) JobUnselected: {'identifier': 'gazebo_ros'}
+[0.000869] (-) JobUnselected: {'identifier': 'gazebo_ros_pkgs'}
+[0.000884] (nao_description) JobQueued: {'identifier': 'nao_description', 'dependencies': OrderedDict({'gazebo_dev': '/home/ahmed/nao_ws/install/gazebo_dev', 'gazebo_msgs': '/home/ahmed/nao_ws/install/gazebo_msgs', 'gazebo_ros': '/home/ahmed/nao_ws/install/gazebo_ros', 'gazebo_plugins': '/home/ahmed/nao_ws/install/gazebo_plugins'})}
+[0.000908] (nao_description) JobStarted: {'identifier': 'nao_description'}
+[0.018184] (nao_description) JobEnded: {'identifier': 'nao_description', 'rc': 1}
+[0.028667] (-) EventReactorShutdown: {}

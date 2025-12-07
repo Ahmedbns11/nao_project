@@ -1,0 +1,41 @@
+[0.013s] Invoking command in '/home/ahmed/nao_ws/build/gazebo_ros': AMENT_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ahmed/nao_ws/src/gazebo_ros_pkgs/gazebo_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ahmed/nao_ws/install/gazebo_ros
+[0.035s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.280s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.306s] -- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)
+[0.347s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.359s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.378s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.399s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.415s] -- Found gazebo_dev: 3.9.0 (/home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake)
+[0.415s] [0mCMake Deprecation Warning at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:37 (message):
+[0.415s]   Package 'gazebo_dev' is deprecated (This package has been deprecated as of
+[0.415s]   January 2025 with Gazebo classic 11 reaching
+[0.415s] 
+[0.415s]         end-of-life. Users are highly encouraged to migrate to the new Gazebo
+[0.415s]         using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))
+[0.415s] Call Stack (most recent call first):
+[0.416s]   CMakeLists.txt:26 (find_package)
+[0.416s] 
+[0.416s] [0m
+[0.434s] [31mCMake Error at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package):
+[0.434s]   By not providing "Findgazebo.cmake" in CMAKE_MODULE_PATH this project has
+[0.434s]   asked CMake to find a package configuration file provided by "gazebo", but
+[0.435s]   CMake did not find one.
+[0.435s] 
+[0.435s]   Could not find a package configuration file provided by "gazebo" with any
+[0.435s]   of the following names:
+[0.435s] 
+[0.435s]     gazeboConfig.cmake
+[0.435s]     gazebo-config.cmake
+[0.435s] 
+[0.435s]   Add the installation prefix of "gazebo" to CMAKE_PREFIX_PATH or set
+[0.435s]   "gazebo_DIR" to a directory containing one of the above files.  If "gazebo"
+[0.435s]   provides a separate development package or SDK, be sure it has been
+[0.435s]   installed.
+[0.435s] Call Stack (most recent call first):
+[0.435s]   /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:47 (include)
+[0.435s]   CMakeLists.txt:26 (find_package)
+[0.435s] 
+[0.436s] [0m
+[0.436s] -- Configuring incomplete, errors occurred!
+[0.439s] Invoked command in '/home/ahmed/nao_ws/build/gazebo_ros' returned '1': AMENT_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/ahmed/nao_ws/src/gazebo_ros_pkgs/gazebo_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ahmed/nao_ws/install/gazebo_ros

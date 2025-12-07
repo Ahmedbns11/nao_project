@@ -1,0 +1,1 @@
+/home/ahmed/nao_ws/build/nao_description/ament_cmake_environment_hooks/local_setup.bash

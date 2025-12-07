@@ -1,0 +1,951 @@
+[0.000000] (-) TimerEvent: {}
+[0.000504] (-) JobUnselected: {'identifier': 'gazebo_dev'}
+[0.000776] (-) JobUnselected: {'identifier': 'gazebo_ros_pkgs'}
+[0.000878] (-) JobUnselected: {'identifier': 'nao_description'}
+[0.000906] (gazebo_msgs) JobQueued: {'identifier': 'gazebo_msgs', 'dependencies': OrderedDict()}
+[0.000932] (gazebo_ros) JobQueued: {'identifier': 'gazebo_ros', 'dependencies': OrderedDict({'gazebo_dev': '/home/ahmed/nao_ws/install/gazebo_dev', 'gazebo_msgs': '/home/ahmed/nao_ws/install/gazebo_msgs'})}
+[0.000961] (gazebo_plugins) JobQueued: {'identifier': 'gazebo_plugins', 'dependencies': OrderedDict({'gazebo_dev': '/home/ahmed/nao_ws/install/gazebo_dev', 'gazebo_msgs': '/home/ahmed/nao_ws/install/gazebo_msgs', 'gazebo_ros': '/home/ahmed/nao_ws/install/gazebo_ros'})}
+[0.000985] (gazebo_msgs) JobStarted: {'identifier': 'gazebo_msgs'}
+[0.019203] (gazebo_msgs) JobProgress: {'identifier': 'gazebo_msgs', 'progress': 'cmake'}
+[0.019743] (gazebo_msgs) JobProgress: {'identifier': 'gazebo_msgs', 'progress': 'build'}
+[0.020406] (gazebo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ahmed/nao_ws/build/gazebo_msgs', '--', '-j8', '-l8'], 'cwd': '/home/ahmed/nao_ws/build/gazebo_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'fr_FR:en', 'USER': 'ahmed', 'LC_TIME': 'fr_FR.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ahmed', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/ahmed/nao_ws', 'TERM_PROGRAM_VERSION': '1.106.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'fr_FR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1585', 'SYSTEMD_EXEC_PID': '1820', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2967', 'NVM_DIR': '/home/ahmed/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ahmed', 'JOURNAL_STREAM': '8:19535', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ahmed', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/ahmed/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/ahmed/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-Modern-15-A11MU:@/tmp/.ICE-unix/1765,unix/ahmed-Modern-15-A11MU:/tmp/.ICE-unix/1765', 'INVOCATION_ID': 'b838a48cf83541718410fe67efaa1132', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'fr_FR.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JTNEG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-38592fdd5e.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ahmed/nao_ws/build/gazebo_msgs', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099853] (-) TimerEvent: {}
+[0.161289] (gazebo_msgs) StdoutLine: {'line': b'[  1%] Built target gazebo_msgs__rosidl_generator_type_description\n'}
+[0.170519] (gazebo_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_gazebo_msgs\n'}
+[0.194835] (gazebo_msgs) StdoutLine: {'line': b'[  1%] Built target gazebo_msgs__cpp\n'}
+[0.199927] (-) TimerEvent: {}
+[0.261333] (gazebo_msgs) StdoutLine: {'line': b'[ 30%] Built target gazebo_msgs__rosidl_generator_c\n'}
+[0.302939] (-) TimerEvent: {}
+[0.346674] (gazebo_msgs) StdoutLine: {'line': b'[ 40%] Built target gazebo_msgs__rosidl_typesupport_introspection_c\n'}
+[0.347868] (gazebo_msgs) StdoutLine: {'line': b'[ 50%] Built target gazebo_msgs__rosidl_typesupport_c\n'}
+[0.365032] (gazebo_msgs) StdoutLine: {'line': b'[ 60%] Built target gazebo_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.365911] (gazebo_msgs) StdoutLine: {'line': b'[ 78%] Built target gazebo_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.366172] (gazebo_msgs) StdoutLine: {'line': b'[ 79%] Built target gazebo_msgs__rosidl_typesupport_cpp\n'}
+[0.369892] (gazebo_msgs) StdoutLine: {'line': b'[ 89%] Built target gazebo_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.388896] (gazebo_msgs) StdoutLine: {'line': b'[ 89%] Built target gazebo_msgs\n'}
+[0.403056] (-) TimerEvent: {}
+[0.412196] (gazebo_msgs) StdoutLine: {'line': b'[ 89%] Built target gazebo_msgs__py\n'}
+[0.432344] (gazebo_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.462895] (gazebo_msgs) StdoutLine: {'line': b'writing gazebo_msgs.egg-info/PKG-INFO\n'}
+[0.463181] (gazebo_msgs) StdoutLine: {'line': b'writing dependency_links to gazebo_msgs.egg-info/dependency_links.txt\n'}
+[0.463406] (gazebo_msgs) StdoutLine: {'line': b'writing top-level names to gazebo_msgs.egg-info/top_level.txt\n'}
+[0.487288] (gazebo_msgs) StdoutLine: {'line': b'[ 98%] Built target gazebo_msgs__rosidl_generator_py\n'}
+[0.503185] (-) TimerEvent: {}
+[0.512127] (gazebo_msgs) StdoutLine: {'line': b'[ 98%] Built target gazebo_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[0.515149] (gazebo_msgs) StdoutLine: {'line': b'[ 99%] Built target gazebo_msgs_s__rosidl_typesupport_c\n'}
+[0.515462] (gazebo_msgs) StdoutLine: {'line': b'[100%] Built target gazebo_msgs_s__rosidl_typesupport_introspection_c\n'}
+[0.553412] (gazebo_msgs) StdoutLine: {'line': b"reading manifest file 'gazebo_msgs.egg-info/SOURCES.txt'\n"}
+[0.554037] (gazebo_msgs) StdoutLine: {'line': b"writing manifest file 'gazebo_msgs.egg-info/SOURCES.txt'\n"}
+[0.583136] (gazebo_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_gazebo_msgs_egg\n'}
+[0.596180] (gazebo_msgs) CommandEnded: {'returncode': 0}
+[0.597096] (gazebo_msgs) JobProgress: {'identifier': 'gazebo_msgs', 'progress': 'install'}
+[0.603284] (-) TimerEvent: {}
+[0.608852] (gazebo_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ahmed/nao_ws/build/gazebo_msgs'], 'cwd': '/home/ahmed/nao_ws/build/gazebo_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'fr_FR:en', 'USER': 'ahmed', 'LC_TIME': 'fr_FR.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ahmed', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/ahmed/nao_ws', 'TERM_PROGRAM_VERSION': '1.106.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'fr_FR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1585', 'SYSTEMD_EXEC_PID': '1820', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2967', 'NVM_DIR': '/home/ahmed/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ahmed', 'JOURNAL_STREAM': '8:19535', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ahmed', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/ahmed/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/ahmed/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-Modern-15-A11MU:@/tmp/.ICE-unix/1765,unix/ahmed-Modern-15-A11MU:/tmp/.ICE-unix/1765', 'INVOCATION_ID': 'b838a48cf83541718410fe67efaa1132', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'fr_FR.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JTNEG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-38592fdd5e.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ahmed/nao_ws/build/gazebo_msgs', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.620480] (gazebo_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.622076] (gazebo_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.622370] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/ament_index/resource_index/rosidl_interfaces/gazebo_msgs\n'}
+[0.622704] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ContactState.json\n'}
+[0.622925] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ContactsState.json\n'}
+[0.623130] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/EntityState.json\n'}
+[0.623350] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/LinkState.json\n'}
+[0.623566] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/LinkStates.json\n'}
+[0.623807] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ModelState.json\n'}
+[0.624015] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ModelStates.json\n'}
+[0.624220] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ODEJointProperties.json\n'}
+[0.624425] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ODEPhysics.json\n'}
+[0.624633] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/PerformanceMetrics.json\n'}
+[0.624881] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/SensorPerformanceMetric.json\n'}
+[0.625115] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/WheelSlip.json\n'}
+[0.625323] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/WorldState.json\n'}
+[0.625556] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyBodyWrench.json\n'}
+[0.625775] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyLinkWrench.json\n'}
+[0.625979] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyJointEffort.json\n'}
+[0.626175] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/BodyRequest.json\n'}
+[0.626378] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteEntity.json\n'}
+[0.626597] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteLight.json\n'}
+[0.626816] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteModel.json\n'}
+[0.627020] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetJointProperties.json\n'}
+[0.627251] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetEntityState.json\n'}
+[0.627479] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLightProperties.json\n'}
+[0.627716] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLinkProperties.json\n'}
+[0.627930] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLinkState.json\n'}
+[0.628145] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelList.json\n'}
+[0.628366] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelProperties.json\n'}
+[0.628592] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelState.json\n'}
+[0.628804] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetPhysicsProperties.json\n'}
+[0.629018] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetWorldProperties.json\n'}
+[0.629240] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/JointRequest.json\n'}
+[0.629447] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/LinkRequest.json\n'}
+[0.629657] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetEntityState.json\n'}
+[0.629857] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetJointProperties.json\n'}
+[0.630079] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetJointTrajectory.json\n'}
+[0.630254] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLightProperties.json\n'}
+[0.630461] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLinkProperties.json\n'}
+[0.630677] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLinkState.json\n'}
+[0.630859] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetModelConfiguration.json\n'}
+[0.631018] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetModelState.json\n'}
+[0.631181] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetPhysicsProperties.json\n'}
+[0.631394] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SpawnEntity.json\n'}
+[0.631565] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SpawnModel.json\n'}
+[0.634259] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/contact_state.h\n'}
+[0.634525] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/contacts_state.h\n'}
+[0.634721] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__functions.h\n'}
+[0.634885] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__struct.h\n'}
+[0.635050] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__type_support.h\n'}
+[0.635212] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__functions.h\n'}
+[0.635432] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__struct.h\n'}
+[0.635624] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__type_support.h\n'}
+[0.635809] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__functions.h\n'}
+[0.635971] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__struct.h\n'}
+[0.636132] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__type_support.h\n'}
+[0.636348] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__functions.h\n'}
+[0.636512] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__struct.h\n'}
+[0.636721] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__type_support.h\n'}
+[0.636906] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__functions.h\n'}
+[0.637068] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__struct.h\n'}
+[0.637228] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__type_support.h\n'}
+[0.637390] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__functions.h\n'}
+[0.637630] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__struct.h\n'}
+[0.637816] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__type_support.h\n'}
+[0.637978] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__functions.h\n'}
+[0.638139] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__struct.h\n'}
+[0.638300] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__type_support.h\n'}
+[0.638460] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__functions.h\n'}
+[0.638691] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__struct.h\n'}
+[0.638848] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__type_support.h\n'}
+[0.639003] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__functions.h\n'}
+[0.639195] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__struct.h\n'}
+[0.639348] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__type_support.h\n'}
+[0.639500] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__functions.h\n'}
+[0.639718] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__struct.h\n'}
+[0.639893] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__type_support.h\n'}
+[0.640050] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__functions.h\n'}
+[0.640201] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__struct.h\n'}
+[0.640353] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__type_support.h\n'}
+[0.640506] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__functions.h\n'}
+[0.640757] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__struct.h\n'}
+[0.640915] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__type_support.h\n'}
+[0.641070] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__functions.h\n'}
+[0.641225] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__struct.h\n'}
+[0.641377] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__type_support.h\n'}
+[0.641535] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/entity_state.h\n'}
+[0.641700] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/link_state.h\n'}
+[0.641808] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/link_states.h\n'}
+[0.641912] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/model_state.h\n'}
+[0.642015] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/model_states.h\n'}
+[0.642119] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/ode_joint_properties.h\n'}
+[0.642221] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/ode_physics.h\n'}
+[0.642326] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/performance_metrics.h\n'}
+[0.642431] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.642636] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/sensor_performance_metric.h\n'}
+[0.642763] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/wheel_slip.h\n'}
+[0.642871] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/world_state.h\n'}
+[0.642995] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/apply_body_wrench.h\n'}
+[0.643100] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/apply_joint_effort.h\n'}
+[0.643205] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/apply_link_wrench.h\n'}
+[0.643309] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/body_request.h\n'}
+[0.643413] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/delete_entity.h\n'}
+[0.643520] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/delete_light.h\n'}
+[0.643687] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/delete_model.h\n'}
+[0.643802] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__functions.h\n'}
+[0.643940] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__struct.h\n'}
+[0.644046] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__type_support.h\n'}
+[0.644153] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__functions.h\n'}
+[0.644259] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__struct.h\n'}
+[0.644364] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__type_support.h\n'}
+[0.644468] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__functions.h\n'}
+[0.644630] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__struct.h\n'}
+[0.644752] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__type_support.h\n'}
+[0.644862] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__functions.h\n'}
+[0.644969] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__struct.h\n'}
+[0.645080] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__type_support.h\n'}
+[0.645187] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__functions.h\n'}
+[0.645297] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__struct.h\n'}
+[0.645408] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__type_support.h\n'}
+[0.645578] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__functions.h\n'}
+[0.645717] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__struct.h\n'}
+[0.645832] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__type_support.h\n'}
+[0.645943] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__functions.h\n'}
+[0.646051] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__struct.h\n'}
+[0.646159] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__type_support.h\n'}
+[0.646263] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__functions.h\n'}
+[0.646418] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__struct.h\n'}
+[0.646522] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__type_support.h\n'}
+[0.646663] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__functions.h\n'}
+[0.646767] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__struct.h\n'}
+[0.646871] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__type_support.h\n'}
+[0.646976] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__functions.h\n'}
+[0.647080] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__struct.h\n'}
+[0.647182] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__type_support.h\n'}
+[0.647287] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__functions.h\n'}
+[0.647428] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__struct.h\n'}
+[0.647535] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__type_support.h\n'}
+[0.647671] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__functions.h\n'}
+[0.647778] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__struct.h\n'}
+[0.647881] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__type_support.h\n'}
+[0.648030] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__functions.h\n'}
+[0.648136] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__struct.h\n'}
+[0.648259] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__type_support.h\n'}
+[0.648364] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__functions.h\n'}
+[0.648468] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__struct.h\n'}
+[0.648606] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__type_support.h\n'}
+[0.648729] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__functions.h\n'}
+[0.648833] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__struct.h\n'}
+[0.648938] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__type_support.h\n'}
+[0.649043] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__functions.h\n'}
+[0.649146] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__struct.h\n'}
+[0.649281] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__type_support.h\n'}
+[0.649386] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__functions.h\n'}
+[0.649490] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__struct.h\n'}
+[0.649637] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__type_support.h\n'}
+[0.649745] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__functions.h\n'}
+[0.649866] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__struct.h\n'}
+[0.649969] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__type_support.h\n'}
+[0.650077] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__functions.h\n'}
+[0.650184] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__struct.h\n'}
+[0.650294] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__type_support.h\n'}
+[0.650401] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__functions.h\n'}
+[0.650509] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__struct.h\n'}
+[0.650665] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__type_support.h\n'}
+[0.650773] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__functions.h\n'}
+[0.650874] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__struct.h\n'}
+[0.650975] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__type_support.h\n'}
+[0.651076] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__functions.h\n'}
+[0.651180] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__struct.h\n'}
+[0.651282] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__type_support.h\n'}
+[0.651382] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__functions.h\n'}
+[0.651482] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__struct.h\n'}
+[0.651618] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__type_support.h\n'}
+[0.651735] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__functions.h\n'}
+[0.651841] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__struct.h\n'}
+[0.651952] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__type_support.h\n'}
+[0.652062] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__functions.h\n'}
+[0.652168] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__struct.h\n'}
+[0.652276] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__type_support.h\n'}
+[0.652381] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__functions.h\n'}
+[0.652488] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__struct.h\n'}
+[0.652740] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__type_support.h\n'}
+[0.652888] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__functions.h\n'}
+[0.653008] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__struct.h\n'}
+[0.653083] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__type_support.h\n'}
+[0.653227] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__functions.h\n'}
+[0.653356] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__struct.h\n'}
+[0.653441] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__type_support.h\n'}
+[0.653517] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__functions.h\n'}
+[0.653633] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__struct.h\n'}
+[0.653718] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__type_support.h\n'}
+[0.653801] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__functions.h\n'}
+[0.653892] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__struct.h\n'}
+[0.653979] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__type_support.h\n'}
+[0.654061] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_entity_state.h\n'}
+[0.654145] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_joint_properties.h\n'}
+[0.654266] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_light_properties.h\n'}
+[0.654341] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_link_properties.h\n'}
+[0.654435] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_link_state.h\n'}
+[0.654529] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_model_list.h\n'}
+[0.654688] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_model_properties.h\n'}
+[0.654774] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_model_state.h\n'}
+[0.654856] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_physics_properties.h\n'}
+[0.654949] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_world_properties.h\n'}
+[0.655020] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/joint_request.h\n'}
+[0.655107] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/link_request.h\n'}
+[0.655173] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_entity_state.h\n'}
+[0.655272] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_joint_properties.h\n'}
+[0.655457] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_joint_trajectory.h\n'}
+[0.655612] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_light_properties.h\n'}
+[0.655731] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_link_properties.h\n'}
+[0.655843] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_link_state.h\n'}
+[0.655967] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_model_configuration.h\n'}
+[0.656088] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_model_state.h\n'}
+[0.656212] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_physics_properties.h\n'}
+[0.656338] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/spawn_entity.h\n'}
+[0.656456] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/spawn_model.h\n'}
+[0.656632] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/library_path.sh\n'}
+[0.656753] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/library_path.dsv\n'}
+[0.656875] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.656989] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657094] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657205] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657324] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657441] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657579] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657706] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657842] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__rosidl_typesupport_fastrtps_c.h\n'}
+[0.657970] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__rosidl_typesupport_fastrtps_c.h\n'}
+[0.658112] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__rosidl_typesupport_fastrtps_c.h\n'}
+[0.658311] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__rosidl_typesupport_fastrtps_c.h\n'}
+[0.658438] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.658663] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.658789] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__rosidl_typesupport_fastrtps_c.h\n'}
+[0.658914] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659033] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659149] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659274] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659391] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659511] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659709] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659837] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.659955] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660074] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660232] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660354] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660573] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660694] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660781] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660865] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.660974] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661059] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661169] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661252] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661335] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661417] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661499] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661597] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661684] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661768] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661850] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__rosidl_typesupport_fastrtps_c.h\n'}
+[0.661930] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_c.h\n'}
+[0.662007] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__rosidl_typesupport_fastrtps_c.h\n'}
+[0.662084] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/contact_state.hpp\n'}
+[0.662161] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/contacts_state.hpp\n'}
+[0.662239] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__builder.hpp\n'}
+[0.662316] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__struct.hpp\n'}
+[0.662393] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__traits.hpp\n'}
+[0.662469] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__type_support.hpp\n'}
+[0.662575] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__builder.hpp\n'}
+[0.662660] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__struct.hpp\n'}
+[0.662789] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__traits.hpp\n'}
+[0.662868] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__type_support.hpp\n'}
+[0.662946] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__builder.hpp\n'}
+[0.663058] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__struct.hpp\n'}
+[0.663140] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__traits.hpp\n'}
+[0.663220] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__type_support.hpp\n'}
+[0.663300] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__builder.hpp\n'}
+[0.663377] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__struct.hpp\n'}
+[0.663492] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__traits.hpp\n'}
+[0.663579] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__type_support.hpp\n'}
+[0.663662] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__builder.hpp\n'}
+[0.663749] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__struct.hpp\n'}
+[0.663830] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__traits.hpp\n'}
+[0.663913] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__type_support.hpp\n'}
+[0.663993] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__builder.hpp\n'}
+[0.664074] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__struct.hpp\n'}
+[0.664153] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__traits.hpp\n'}
+[0.664231] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__type_support.hpp\n'}
+[0.664310] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__builder.hpp\n'}
+[0.664394] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__struct.hpp\n'}
+[0.664474] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__traits.hpp\n'}
+[0.664580] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__type_support.hpp\n'}
+[0.664785] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__builder.hpp\n'}
+[0.664856] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__struct.hpp\n'}
+[0.664921] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__traits.hpp\n'}
+[0.664986] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__type_support.hpp\n'}
+[0.665052] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__builder.hpp\n'}
+[0.665115] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__struct.hpp\n'}
+[0.665178] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__traits.hpp\n'}
+[0.665242] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__type_support.hpp\n'}
+[0.665306] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__builder.hpp\n'}
+[0.665370] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__struct.hpp\n'}
+[0.665436] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__traits.hpp\n'}
+[0.665499] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__type_support.hpp\n'}
+[0.665642] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__builder.hpp\n'}
+[0.665708] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__struct.hpp\n'}
+[0.665772] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__traits.hpp\n'}
+[0.665836] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__type_support.hpp\n'}
+[0.665900] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__builder.hpp\n'}
+[0.665963] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__struct.hpp\n'}
+[0.666025] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__traits.hpp\n'}
+[0.666087] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__type_support.hpp\n'}
+[0.666150] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__builder.hpp\n'}
+[0.666212] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__struct.hpp\n'}
+[0.666276] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__traits.hpp\n'}
+[0.666338] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__type_support.hpp\n'}
+[0.666400] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/entity_state.hpp\n'}
+[0.666461] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/link_state.hpp\n'}
+[0.666522] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/link_states.hpp\n'}
+[0.666611] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/model_state.hpp\n'}
+[0.666674] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/model_states.hpp\n'}
+[0.666737] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/ode_joint_properties.hpp\n'}
+[0.666799] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/ode_physics.hpp\n'}
+[0.666862] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/performance_metrics.hpp\n'}
+[0.666923] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.666984] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/sensor_performance_metric.hpp\n'}
+[0.667045] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/wheel_slip.hpp\n'}
+[0.667108] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/world_state.hpp\n'}
+[0.667171] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/apply_body_wrench.hpp\n'}
+[0.667233] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/apply_joint_effort.hpp\n'}
+[0.667296] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/apply_link_wrench.hpp\n'}
+[0.667358] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/body_request.hpp\n'}
+[0.667424] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/delete_entity.hpp\n'}
+[0.667516] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/delete_light.hpp\n'}
+[0.667652] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/delete_model.hpp\n'}
+[0.667732] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__builder.hpp\n'}
+[0.667846] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__struct.hpp\n'}
+[0.668031] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__traits.hpp\n'}
+[0.668099] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__type_support.hpp\n'}
+[0.668191] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__builder.hpp\n'}
+[0.668297] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__struct.hpp\n'}
+[0.668392] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__traits.hpp\n'}
+[0.668482] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__type_support.hpp\n'}
+[0.668616] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__builder.hpp\n'}
+[0.668680] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__struct.hpp\n'}
+[0.668760] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__traits.hpp\n'}
+[0.668838] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__type_support.hpp\n'}
+[0.668903] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__builder.hpp\n'}
+[0.668967] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__struct.hpp\n'}
+[0.669031] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__traits.hpp\n'}
+[0.669093] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__type_support.hpp\n'}
+[0.669159] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__builder.hpp\n'}
+[0.669221] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__struct.hpp\n'}
+[0.669287] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__traits.hpp\n'}
+[0.669349] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__type_support.hpp\n'}
+[0.669414] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__builder.hpp\n'}
+[0.669494] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__struct.hpp\n'}
+[0.669640] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__traits.hpp\n'}
+[0.669717] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__type_support.hpp\n'}
+[0.669787] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__builder.hpp\n'}
+[0.669877] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__struct.hpp\n'}
+[0.669947] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__traits.hpp\n'}
+[0.670018] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__type_support.hpp\n'}
+[0.670085] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__builder.hpp\n'}
+[0.670156] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__struct.hpp\n'}
+[0.670222] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__traits.hpp\n'}
+[0.670319] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__type_support.hpp\n'}
+[0.670390] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__builder.hpp\n'}
+[0.670454] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__struct.hpp\n'}
+[0.670518] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__traits.hpp\n'}
+[0.670616] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__type_support.hpp\n'}
+[0.670678] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__builder.hpp\n'}
+[0.670753] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__struct.hpp\n'}
+[0.670832] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__traits.hpp\n'}
+[0.670910] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__type_support.hpp\n'}
+[0.670987] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__builder.hpp\n'}
+[0.671064] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__struct.hpp\n'}
+[0.671142] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__traits.hpp\n'}
+[0.671218] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__type_support.hpp\n'}
+[0.671296] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__builder.hpp\n'}
+[0.671372] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__struct.hpp\n'}
+[0.671486] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__traits.hpp\n'}
+[0.671573] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__type_support.hpp\n'}
+[0.671652] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__builder.hpp\n'}
+[0.671730] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__struct.hpp\n'}
+[0.671808] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__traits.hpp\n'}
+[0.671885] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__type_support.hpp\n'}
+[0.671963] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__builder.hpp\n'}
+[0.672041] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__struct.hpp\n'}
+[0.672118] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__traits.hpp\n'}
+[0.672193] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__type_support.hpp\n'}
+[0.672269] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__builder.hpp\n'}
+[0.672343] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__struct.hpp\n'}
+[0.672417] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__traits.hpp\n'}
+[0.672525] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__type_support.hpp\n'}
+[0.672655] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__builder.hpp\n'}
+[0.672733] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__struct.hpp\n'}
+[0.672823] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__traits.hpp\n'}
+[0.672900] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__type_support.hpp\n'}
+[0.672977] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__builder.hpp\n'}
+[0.673052] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__struct.hpp\n'}
+[0.673127] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__traits.hpp\n'}
+[0.673201] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__type_support.hpp\n'}
+[0.673320] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__builder.hpp\n'}
+[0.673397] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__struct.hpp\n'}
+[0.673474] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__traits.hpp\n'}
+[0.673595] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__type_support.hpp\n'}
+[0.673676] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__builder.hpp\n'}
+[0.673756] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__struct.hpp\n'}
+[0.673835] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__traits.hpp\n'}
+[0.673913] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__type_support.hpp\n'}
+[0.673991] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__builder.hpp\n'}
+[0.674070] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__struct.hpp\n'}
+[0.674149] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__traits.hpp\n'}
+[0.674226] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__type_support.hpp\n'}
+[0.674305] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__builder.hpp\n'}
+[0.674390] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__struct.hpp\n'}
+[0.674456] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__traits.hpp\n'}
+[0.674599] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__type_support.hpp\n'}
+[0.674670] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__builder.hpp\n'}
+[0.674736] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__struct.hpp\n'}
+[0.674830] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__traits.hpp\n'}
+[0.675007] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__type_support.hpp\n'}
+[0.675121] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__builder.hpp\n'}
+[0.675216] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__struct.hpp\n'}
+[0.675314] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__traits.hpp\n'}
+[0.675404] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__type_support.hpp\n'}
+[0.675542] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__builder.hpp\n'}
+[0.675614] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__struct.hpp\n'}
+[0.675678] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__traits.hpp\n'}
+[0.675741] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__type_support.hpp\n'}
+[0.675805] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__builder.hpp\n'}
+[0.675868] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__struct.hpp\n'}
+[0.675931] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__traits.hpp\n'}
+[0.675994] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__type_support.hpp\n'}
+[0.676056] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__builder.hpp\n'}
+[0.676116] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__struct.hpp\n'}
+[0.676178] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__traits.hpp\n'}
+[0.676239] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__type_support.hpp\n'}
+[0.676301] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__builder.hpp\n'}
+[0.676363] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__struct.hpp\n'}
+[0.676425] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__traits.hpp\n'}
+[0.676485] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__type_support.hpp\n'}
+[0.676555] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__builder.hpp\n'}
+[0.676620] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__struct.hpp\n'}
+[0.676682] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__traits.hpp\n'}
+[0.676746] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__type_support.hpp\n'}
+[0.676807] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__builder.hpp\n'}
+[0.676869] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__struct.hpp\n'}
+[0.676930] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__traits.hpp\n'}
+[0.676995] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__type_support.hpp\n'}
+[0.677057] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__builder.hpp\n'}
+[0.677156] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__struct.hpp\n'}
+[0.677245] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__traits.hpp\n'}
+[0.677308] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__type_support.hpp\n'}
+[0.677370] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_entity_state.hpp\n'}
+[0.677431] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_joint_properties.hpp\n'}
+[0.677521] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_light_properties.hpp\n'}
+[0.677594] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_link_properties.hpp\n'}
+[0.677656] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_link_state.hpp\n'}
+[0.677716] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_model_list.hpp\n'}
+[0.677777] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_model_properties.hpp\n'}
+[0.677917] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_model_state.hpp\n'}
+[0.677980] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_physics_properties.hpp\n'}
+[0.678039] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/get_world_properties.hpp\n'}
+[0.678097] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/joint_request.hpp\n'}
+[0.678155] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/link_request.hpp\n'}
+[0.678212] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_entity_state.hpp\n'}
+[0.678270] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_joint_properties.hpp\n'}
+[0.678331] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_joint_trajectory.hpp\n'}
+[0.678391] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_light_properties.hpp\n'}
+[0.678449] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_link_properties.hpp\n'}
+[0.678506] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_link_state.hpp\n'}
+[0.678578] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_model_configuration.hpp\n'}
+[0.678638] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_model_state.hpp\n'}
+[0.678697] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/set_physics_properties.hpp\n'}
+[0.678755] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/spawn_entity.hpp\n'}
+[0.678814] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/spawn_model.hpp\n'}
+[0.678916] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679008] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679109] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679208] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679311] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679405] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679502] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679609] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679706] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679802] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.679900] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680004] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680103] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680199] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.680296] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680393] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680488] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680592] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680693] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680791] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680888] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.680986] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681104] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681190] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681287] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681386] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681482] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681587] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681685] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681783] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681875] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.681967] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682059] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682152] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682243] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682335] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682426] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682517] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682618] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682712] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682804] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682901] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.682993] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.683085] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.683813] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__rosidl_typesupport_introspection_c.h\n'}
+[0.683909] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__rosidl_typesupport_introspection_c.h\n'}
+[0.684032] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__rosidl_typesupport_introspection_c.h\n'}
+[0.684171] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__rosidl_typesupport_introspection_c.h\n'}
+[0.684259] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__rosidl_typesupport_introspection_c.h\n'}
+[0.684347] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__rosidl_typesupport_introspection_c.h\n'}
+[0.684428] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__rosidl_typesupport_introspection_c.h\n'}
+[0.684508] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.684592] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__rosidl_typesupport_introspection_c.h\n'}
+[0.684671] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__rosidl_typesupport_introspection_c.h\n'}
+[0.684751] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__rosidl_typesupport_introspection_c.h\n'}
+[0.684830] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__rosidl_typesupport_introspection_c.h\n'}
+[0.684908] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__rosidl_typesupport_introspection_c.h\n'}
+[0.684987] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.685072] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__rosidl_typesupport_introspection_c.h\n'}
+[0.685151] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__rosidl_typesupport_introspection_c.h\n'}
+[0.685225] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__rosidl_typesupport_introspection_c.h\n'}
+[0.685305] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__rosidl_typesupport_introspection_c.h\n'}
+[0.685384] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__rosidl_typesupport_introspection_c.h\n'}
+[0.685461] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__rosidl_typesupport_introspection_c.h\n'}
+[0.685543] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__rosidl_typesupport_introspection_c.h\n'}
+[0.685626] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__rosidl_typesupport_introspection_c.h\n'}
+[0.685704] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.685781] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.685858] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.685935] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__rosidl_typesupport_introspection_c.h\n'}
+[0.686008] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__rosidl_typesupport_introspection_c.h\n'}
+[0.686094] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.686175] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__rosidl_typesupport_introspection_c.h\n'}
+[0.686255] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.686335] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.686416] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__rosidl_typesupport_introspection_c.h\n'}
+[0.686497] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__rosidl_typesupport_introspection_c.h\n'}
+[0.686587] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__rosidl_typesupport_introspection_c.h\n'}
+[0.686670] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.686750] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__rosidl_typesupport_introspection_c.h\n'}
+[0.686830] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.686911] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.686994] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__rosidl_typesupport_introspection_c.h\n'}
+[0.687075] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__rosidl_typesupport_introspection_c.h\n'}
+[0.687156] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__rosidl_typesupport_introspection_c.h\n'}
+[0.687234] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__rosidl_typesupport_introspection_c.h\n'}
+[0.687312] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__rosidl_typesupport_introspection_c.h\n'}
+[0.687389] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__rosidl_typesupport_introspection_c.h\n'}
+[0.688146] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contact_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688228] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/contacts_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688302] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/entity_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688375] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688444] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/link_states__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688517] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688606] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/model_states__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688689] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_joint_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688772] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/ode_physics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688852] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/performance_metrics__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.688936] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/sensor_performance_metric__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689017] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/wheel_slip__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689098] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/msg/detail/world_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689182] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_body_wrench__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689264] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_joint_effort__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689345] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/apply_link_wrench__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689426] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/body_request__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689507] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_entity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689592] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_light__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689675] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/delete_model__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689756] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_entity_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689838] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_joint_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.689928] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_light_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690015] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690100] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_link_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690183] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_list__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690264] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690360] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_model_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690444] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_physics_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690548] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/get_world_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690646] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/joint_request__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690741] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/link_request__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.690871] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_entity_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.691014] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.691155] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_joint_trajectory__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.691292] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_light_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.691426] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.691575] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_link_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.691831] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_configuration__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.691910] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_model_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.692027] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/set_physics_properties__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.692140] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_entity__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.692202] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/include/gazebo_msgs/gazebo_msgs/srv/detail/spawn_model__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.692290] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/pythonpath.sh\n'}
+[0.692366] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/pythonpath.dsv\n'}
+[0.692726] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs-3.9.0-py3.12.egg-info/PKG-INFO\n'}
+[0.692920] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs-3.9.0-py3.12.egg-info/SOURCES.txt\n'}
+[0.693197] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs-3.9.0-py3.12.egg-info/dependency_links.txt\n'}
+[0.693338] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs-3.9.0-py3.12.egg-info/top_level.txt\n'}
+[0.694871] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/__init__.py\n'}
+[0.695085] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/_gazebo_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.695232] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/_gazebo_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.695387] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/_gazebo_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.695566] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/gazebo_msgs_s__rosidl_typesupport_c.so\n'}
+[0.695709] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/gazebo_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.695853] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/gazebo_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[0.695996] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/__init__.py\n'}
+[0.696129] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_contact_state.py\n'}
+[0.696269] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_contact_state_s.c\n'}
+[0.696402] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_contacts_state.py\n'}
+[0.696584] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_contacts_state_s.c\n'}
+[0.696729] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_entity_state.py\n'}
+[0.696876] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_entity_state_s.c\n'}
+[0.697030] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_link_state.py\n'}
+[0.697184] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_link_state_s.c\n'}
+[0.697344] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_link_states.py\n'}
+[0.697480] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_link_states_s.c\n'}
+[0.697641] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_model_state.py\n'}
+[0.697794] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_model_state_s.c\n'}
+[0.697936] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_model_states.py\n'}
+[0.698094] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_model_states_s.c\n'}
+[0.698227] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_ode_joint_properties.py\n'}
+[0.698376] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_ode_joint_properties_s.c\n'}
+[0.698521] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_ode_physics.py\n'}
+[0.698693] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_ode_physics_s.c\n'}
+[0.698828] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_performance_metrics.py\n'}
+[0.698982] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_performance_metrics_s.c\n'}
+[0.699113] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_sensor_performance_metric.py\n'}
+[0.699261] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_sensor_performance_metric_s.c\n'}
+[0.699418] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_wheel_slip.py\n'}
+[0.699559] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_wheel_slip_s.c\n'}
+[0.699726] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_world_state.py\n'}
+[0.699869] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg/_world_state_s.c\n'}
+[0.700009] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/__init__.py\n'}
+[0.700158] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_apply_body_wrench.py\n'}
+[0.700318] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_apply_body_wrench_s.c\n'}
+[0.700450] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_apply_joint_effort.py\n'}
+[0.700604] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_apply_joint_effort_s.c\n'}
+[0.700751] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_apply_link_wrench.py\n'}
+[0.700907] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_apply_link_wrench_s.c\n'}
+[0.701062] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_body_request.py\n'}
+[0.701197] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_body_request_s.c\n'}
+[0.701332] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_delete_entity.py\n'}
+[0.701499] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_delete_entity_s.c\n'}
+[0.701641] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_delete_light.py\n'}
+[0.701777] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_delete_light_s.c\n'}
+[0.701916] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_delete_model.py\n'}
+[0.702062] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_delete_model_s.c\n'}
+[0.702207] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_entity_state.py\n'}
+[0.702352] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_entity_state_s.c\n'}
+[0.702496] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_joint_properties.py\n'}
+[0.702651] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_joint_properties_s.c\n'}
+[0.702803] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_light_properties.py\n'}
+[0.702951] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_light_properties_s.c\n'}
+[0.703107] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_link_properties.py\n'}
+[0.703253] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_link_properties_s.c\n'}
+[0.703366] (-) TimerEvent: {}
+[0.703499] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_link_state.py\n'}
+[0.703664] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_link_state_s.c\n'}
+[0.703811] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_model_list.py\n'}
+[0.703955] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_model_list_s.c\n'}
+[0.704098] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_model_properties.py\n'}
+[0.704242] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_model_properties_s.c\n'}
+[0.704382] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_model_state.py\n'}
+[0.704522] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_model_state_s.c\n'}
+[0.704687] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_physics_properties.py\n'}
+[0.704821] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_physics_properties_s.c\n'}
+[0.704970] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_world_properties.py\n'}
+[0.705121] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_get_world_properties_s.c\n'}
+[0.705267] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_joint_request.py\n'}
+[0.705424] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_joint_request_s.c\n'}
+[0.705586] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_link_request.py\n'}
+[0.705729] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_link_request_s.c\n'}
+[0.705873] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_entity_state.py\n'}
+[0.706037] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_entity_state_s.c\n'}
+[0.706177] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_joint_properties.py\n'}
+[0.706320] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_joint_properties_s.c\n'}
+[0.706482] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_joint_trajectory.py\n'}
+[0.706628] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_joint_trajectory_s.c\n'}
+[0.706770] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_light_properties.py\n'}
+[0.706932] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_light_properties_s.c\n'}
+[0.707097] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_link_properties.py\n'}
+[0.707236] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_link_properties_s.c\n'}
+[0.707379] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_link_state.py\n'}
+[0.707516] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_link_state_s.c\n'}
+[0.707679] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_model_configuration.py\n'}
+[0.707855] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_model_configuration_s.c\n'}
+[0.708001] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_model_state.py\n'}
+[0.708144] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_model_state_s.c\n'}
+[0.708285] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_physics_properties.py\n'}
+[0.708435] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_set_physics_properties_s.c\n'}
+[0.708580] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_spawn_entity.py\n'}
+[0.708720] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_spawn_entity_s.c\n'}
+[0.708882] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_spawn_model.py\n'}
+[0.709037] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv/_spawn_model_s.c\n'}
+[0.709366] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/gazebo_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.709714] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/gazebo_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[0.709993] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/gazebo_msgs_s__rosidl_typesupport_c.so\n'}
+[0.710228] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ContactState.idl\n'}
+[0.710431] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ContactsState.idl\n'}
+[0.710651] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/EntityState.idl\n'}
+[0.710840] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/LinkState.idl\n'}
+[0.711040] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/LinkStates.idl\n'}
+[0.711240] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ModelState.idl\n'}
+[0.711446] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ModelStates.idl\n'}
+[0.711657] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ODEJointProperties.idl\n'}
+[0.711863] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ODEPhysics.idl\n'}
+[0.712064] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/PerformanceMetrics.idl\n'}
+[0.712263] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/SensorPerformanceMetric.idl\n'}
+[0.712452] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/WheelSlip.idl\n'}
+[0.712651] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/WorldState.idl\n'}
+[0.712849] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyBodyWrench.idl\n'}
+[0.713042] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyLinkWrench.idl\n'}
+[0.713236] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyJointEffort.idl\n'}
+[0.713426] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/BodyRequest.idl\n'}
+[0.713625] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteEntity.idl\n'}
+[0.713820] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteLight.idl\n'}
+[0.714009] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteModel.idl\n'}
+[0.714202] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetJointProperties.idl\n'}
+[0.714394] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetEntityState.idl\n'}
+[0.714596] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLightProperties.idl\n'}
+[0.714793] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLinkProperties.idl\n'}
+[0.714985] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLinkState.idl\n'}
+[0.715181] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelList.idl\n'}
+[0.715371] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelProperties.idl\n'}
+[0.715574] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelState.idl\n'}
+[0.715769] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetPhysicsProperties.idl\n'}
+[0.715965] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetWorldProperties.idl\n'}
+[0.716157] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/JointRequest.idl\n'}
+[0.716344] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/LinkRequest.idl\n'}
+[0.716535] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetEntityState.idl\n'}
+[0.716738] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetJointProperties.idl\n'}
+[0.716920] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetJointTrajectory.idl\n'}
+[0.717105] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLightProperties.idl\n'}
+[0.717290] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLinkProperties.idl\n'}
+[0.717477] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLinkState.idl\n'}
+[0.717674] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetModelConfiguration.idl\n'}
+[0.717859] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetModelState.idl\n'}
+[0.718046] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetPhysicsProperties.idl\n'}
+[0.718232] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SpawnEntity.idl\n'}
+[0.718418] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SpawnModel.idl\n'}
+[0.718608] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ContactState.msg\n'}
+[0.718808] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ContactsState.msg\n'}
+[0.718992] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/EntityState.msg\n'}
+[0.719177] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/LinkState.msg\n'}
+[0.719362] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/LinkStates.msg\n'}
+[0.719549] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ModelState.msg\n'}
+[0.719745] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ModelStates.msg\n'}
+[0.719930] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ODEJointProperties.msg\n'}
+[0.720114] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/ODEPhysics.msg\n'}
+[0.720298] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/PerformanceMetrics.msg\n'}
+[0.720482] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/SensorPerformanceMetric.msg\n'}
+[0.720690] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/WheelSlip.msg\n'}
+[0.720871] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/msg/WorldState.msg\n'}
+[0.721054] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyBodyWrench.srv\n'}
+[0.721238] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyLinkWrench.srv\n'}
+[0.721424] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/ApplyJointEffort.srv\n'}
+[0.721611] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/BodyRequest.srv\n'}
+[0.721804] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteEntity.srv\n'}
+[0.721987] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteLight.srv\n'}
+[0.722167] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/DeleteModel.srv\n'}
+[0.722349] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetJointProperties.srv\n'}
+[0.722540] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetEntityState.srv\n'}
+[0.722727] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLightProperties.srv\n'}
+[0.722911] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLinkProperties.srv\n'}
+[0.723092] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetLinkState.srv\n'}
+[0.723274] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelList.srv\n'}
+[0.723457] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelProperties.srv\n'}
+[0.723650] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetModelState.srv\n'}
+[0.723835] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetPhysicsProperties.srv\n'}
+[0.724018] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/GetWorldProperties.srv\n'}
+[0.724203] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/JointRequest.srv\n'}
+[0.724384] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/LinkRequest.srv\n'}
+[0.724579] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetEntityState.srv\n'}
+[0.724776] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetJointProperties.srv\n'}
+[0.724958] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetJointTrajectory.srv\n'}
+[0.725145] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLightProperties.srv\n'}
+[0.725368] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLinkProperties.srv\n'}
+[0.725531] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetLinkState.srv\n'}
+[0.725723] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetModelConfiguration.srv\n'}
+[0.725942] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetModelState.srv\n'}
+[0.726129] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SetPhysicsProperties.srv\n'}
+[0.726266] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SpawnEntity.srv\n'}
+[0.726378] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/srv/SpawnModel.srv\n'}
+[0.726484] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/ament_index/resource_index/package_run_dependencies/gazebo_msgs\n'}
+[0.726647] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/ament_index/resource_index/parent_prefix_path/gazebo_msgs\n'}
+[0.726794] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/ament_prefix_path.sh\n'}
+[0.726932] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/ament_prefix_path.dsv\n'}
+[0.727073] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/path.sh\n'}
+[0.727202] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/environment/path.dsv\n'}
+[0.727347] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/local_setup.bash\n'}
+[0.727478] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/local_setup.sh\n'}
+[0.727629] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/local_setup.zsh\n'}
+[0.727758] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/local_setup.dsv\n'}
+[0.727869] (gazebo_msgs) StdoutLine: {'line': b'-- Symlinking: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/package.dsv\n'}
+[0.736294] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/ament_index/resource_index/packages/gazebo_msgs\n'}
+[0.736469] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs-extras.cmake\n'}
+[0.736596] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.736678] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.736776] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.736869] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.736964] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.737071] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.737188] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.737310] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgsConfig.cmake\n'}
+[0.737389] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgsConfig-version.cmake\n'}
+[0.737506] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/package.xml\n'}
+[0.737636] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/gazebo_msgs_mapping_rules.yaml\n'}
+[0.741707] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_generator_c.so\n'}
+[0.742150] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.742520] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.742916] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.743160] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_typesupport_c.so\n'}
+[0.743362] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.743796] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_typesupport_cpp.so\n'}
+[0.781322] (gazebo_msgs) StdoutLine: {'line': b"Listing '/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs'...\n"}
+[0.781497] (gazebo_msgs) StdoutLine: {'line': b"Listing '/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/msg'...\n"}
+[0.781579] (gazebo_msgs) StdoutLine: {'line': b"Listing '/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages/gazebo_msgs/srv'...\n"}
+[0.786831] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/lib/libgazebo_msgs__rosidl_generator_py.so\n'}
+[0.787023] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_generator_cExport.cmake\n'}
+[0.787116] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.787233] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.787316] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.787392] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.787461] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.787560] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.787697] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.787770] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.787837] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.787899] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.787962] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.788050] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.788110] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.788168] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/gazebo_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.788227] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.788285] (gazebo_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/ahmed/nao_ws/install/gazebo_msgs/share/gazebo_msgs/cmake/export_gazebo_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.789514] (gazebo_msgs) CommandEnded: {'returncode': 0}
+[0.803455] (-) TimerEvent: {}
+[0.816213] (gazebo_msgs) JobEnded: {'identifier': 'gazebo_msgs', 'rc': 0}
+[0.817202] (gazebo_ros) JobStarted: {'identifier': 'gazebo_ros'}
+[0.827754] (gazebo_ros) JobProgress: {'identifier': 'gazebo_ros', 'progress': 'cmake'}
+[0.828769] (gazebo_ros) Command: {'cmd': ['/usr/bin/cmake', '/home/ahmed/nao_ws/src/gazebo_ros_pkgs/gazebo_ros', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/ahmed/nao_ws/install/gazebo_ros'], 'cwd': '/home/ahmed/nao_ws/build/gazebo_ros', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'fr_FR:en', 'USER': 'ahmed', 'LC_TIME': 'fr_FR.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/sdformat_vendor/share/gz', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ahmed/nao_ws/install/gazebo_msgs/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/ahmed', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/ahmed/nao_ws', 'TERM_PROGRAM_VERSION': '1.106.2', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'fr_FR.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '1585', 'SYSTEMD_EXEC_PID': '1820', 'IM_CONFIG_CHECK_ENV': '1', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2967', 'NVM_DIR': '/home/ahmed/.nvm', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'ahmed', 'JOURNAL_STREAM': '8:19535', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'ahmed', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/ahmed/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/ahmed/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ahmed-Modern-15-A11MU:@/tmp/.ICE-unix/1765,unix/ahmed-Modern-15-A11MU:/tmp/.ICE-unix/1765', 'INVOCATION_ID': 'b838a48cf83541718410fe67efaa1132', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'fr_FR.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'fr_FR.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'LC_TELEPHONE': 'fr_FR.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JTNEG3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-38592fdd5e.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:/opt/ros/jazzy', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'LC_NAME': 'fr_FR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'fr_FR.UTF-8', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'fr_FR.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ahmed/nao_ws/build/gazebo_ros', 'QT_QPA_PLATFORM': 'xcb', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ahmed/nao_ws/install/gazebo_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'fr_FR.UTF-8', 'LC_PAPER': 'fr_FR.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/ahmed/nao_ws/install/gazebo_msgs:/home/ahmed/nao_ws/install/gazebo_dev:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.852521] (gazebo_ros) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.903583] (-) TimerEvent: {}
+[1.003820] (-) TimerEvent: {}
+[1.097342] (gazebo_ros) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.103892] (-) TimerEvent: {}
+[1.123324] (gazebo_ros) StdoutLine: {'line': b'-- Found builtin_interfaces: 2.0.3 (/opt/ros/jazzy/share/builtin_interfaces/cmake)\n'}
+[1.164513] (gazebo_ros) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.175583] (gazebo_ros) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.195385] (gazebo_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.203991] (-) TimerEvent: {}
+[1.215683] (gazebo_ros) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.232000] (gazebo_ros) StdoutLine: {'line': b'-- Found gazebo_dev: 3.9.0 (/home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake)\n'}
+[1.232190] (gazebo_ros) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:37 (message):\n'}
+[1.232292] (gazebo_ros) StderrLine: {'line': b"  Package 'gazebo_dev' is deprecated (This package has been deprecated as of\n"}
+[1.232364] (gazebo_ros) StderrLine: {'line': b'  January 2025 with Gazebo classic 11 reaching\n'}
+[1.232432] (gazebo_ros) StderrLine: {'line': b'\n'}
+[1.232499] (gazebo_ros) StderrLine: {'line': b'        end-of-life. Users are highly encouraged to migrate to the new Gazebo\n'}
+[1.232579] (gazebo_ros) StderrLine: {'line': b'        using our migration guides (https://gazebosim.org/docs/latest/gazebo_classic_migration))\n'}
+[1.232650] (gazebo_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.232717] (gazebo_ros) StderrLine: {'line': b'  CMakeLists.txt:26 (find_package)\n'}
+[1.232782] (gazebo_ros) StderrLine: {'line': b'\n'}
+[1.232847] (gazebo_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.251294] (gazebo_ros) StderrLine: {'line': b'\x1b[31mCMake Error at /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package):\n'}
+[1.251492] (gazebo_ros) StderrLine: {'line': b'  By not providing "Findgazebo.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[1.251604] (gazebo_ros) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "gazebo", but\n'}
+[1.251677] (gazebo_ros) StderrLine: {'line': b'  CMake did not find one.\n'}
+[1.251745] (gazebo_ros) StderrLine: {'line': b'\n'}
+[1.251814] (gazebo_ros) StderrLine: {'line': b'  Could not find a package configuration file provided by "gazebo" with any\n'}
+[1.251882] (gazebo_ros) StderrLine: {'line': b'  of the following names:\n'}
+[1.251949] (gazebo_ros) StderrLine: {'line': b'\n'}
+[1.252015] (gazebo_ros) StderrLine: {'line': b'    gazeboConfig.cmake\n'}
+[1.252080] (gazebo_ros) StderrLine: {'line': b'    gazebo-config.cmake\n'}
+[1.252146] (gazebo_ros) StderrLine: {'line': b'\n'}
+[1.252212] (gazebo_ros) StderrLine: {'line': b'  Add the installation prefix of "gazebo" to CMAKE_PREFIX_PATH or set\n'}
+[1.252276] (gazebo_ros) StderrLine: {'line': b'  "gazebo_DIR" to a directory containing one of the above files.  If "gazebo"\n'}
+[1.252338] (gazebo_ros) StderrLine: {'line': b'  provides a separate development package or SDK, be sure it has been\n'}
+[1.252398] (gazebo_ros) StderrLine: {'line': b'  installed.\n'}
+[1.252460] (gazebo_ros) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.252521] (gazebo_ros) StderrLine: {'line': b'  /home/ahmed/nao_ws/install/gazebo_dev/share/gazebo_dev/cmake/gazebo_devConfig.cmake:47 (include)\n'}
+[1.252595] (gazebo_ros) StderrLine: {'line': b'  CMakeLists.txt:26 (find_package)\n'}
+[1.252658] (gazebo_ros) StderrLine: {'line': b'\n'}
+[1.252720] (gazebo_ros) StderrLine: {'line': b'\x1b[0m\n'}
+[1.252830] (gazebo_ros) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.256104] (gazebo_ros) CommandEnded: {'returncode': 1}
+[1.272035] (gazebo_ros) JobEnded: {'identifier': 'gazebo_ros', 'rc': 1}
+[1.282521] (gazebo_plugins) JobSkipped: {'identifier': 'gazebo_plugins'}
+[1.282588] (-) EventReactorShutdown: {}

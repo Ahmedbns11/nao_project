@@ -1,0 +1,155 @@
+[0.013s] Invoking command in '/home/ahmed/nao_ws/build/nao_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/nao_ws/src/proj-nao-Group3/nao_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ahmed/nao_ws/install/nao_description
+[0.192s] -- The C compiler identification is GNU 13.3.0
+[0.365s] -- The CXX compiler identification is GNU 13.3.0
+[0.399s] -- Detecting C compiler ABI info
+[0.573s] -- Detecting C compiler ABI info - done
+[0.593s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.594s] -- Detecting C compile features
+[0.595s] -- Detecting C compile features - done
+[0.615s] -- Detecting CXX compiler ABI info
+[0.807s] -- Detecting CXX compiler ABI info - done
+[0.819s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.819s] -- Detecting CXX compile features
+[0.820s] -- Detecting CXX compile features - done
+[0.823s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.026s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.124s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.179s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.236s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.249s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.268s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.286s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.384s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.390s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.526s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.570s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.598s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.703s] -- Found robot_state_publisher: 3.3.3 (/opt/ros/jazzy/share/robot_state_publisher/cmake)
+[2.014s] -- Found rviz2: 14.1.17 (/opt/ros/jazzy/share/rviz2/cmake)
+[2.022s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.218s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.218s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.222s] -- Added test 'lint_cmake' to check CMake code style
+[2.224s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.237s] -- Added test 'xmllint' to check XML markup files
+[2.242s] -- Configuring done (2.2s)
+[2.253s] -- Generating done (0.0s)
+[2.259s] -- Build files have been written to: /home/ahmed/nao_ws/build/nao_description
+[2.276s] Invoked command in '/home/ahmed/nao_ws/build/nao_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/ahmed/nao_ws/src/proj-nao-Group3/nao_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ahmed/nao_ws/install/nao_description
+[2.278s] Invoking command in '/home/ahmed/nao_ws/build/nao_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/nao_ws/build/nao_description -- -j8 -l8
+[2.351s] Invoked command in '/home/ahmed/nao_ws/build/nao_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/ahmed/nao_ws/build/nao_description -- -j8 -l8
+[2.373s] Invoking command in '/home/ahmed/nao_ws/build/nao_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/nao_ws/build/nao_description
+[2.389s] -- Install configuration: ""
+[2.390s] -- Execute custom install script
+[2.391s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/urdf/nao.urdf
+[2.410s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/urdf/nao_harmonic.urdf
+[2.431s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/urdf/nao_simplified.urdf
+[2.449s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/display.launch.py
+[2.461s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_fortress.launch.py
+[2.471s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_gui.launch.py
+[2.479s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_harmonic.launch.py
+[2.487s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_headless.launch.py
+[2.495s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_simple.launch.py
+[2.504s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_software_rendering.launch.py
+[2.513s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_spawn.launch.py
+[2.524s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/gazebo_with_rviz.launch.py
+[2.538s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/ignition.launch.py
+[2.554s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/launch/rviz_only.launch.py
+[2.567s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/config/controllers.yaml
+[2.577s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/rviz/nao_view.rviz
+[2.587s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/README.md
+[2.595s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/HeadPitch.dae
+[2.604s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/HeadPitch_0.10.stl
+[2.612s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/HeadYaw.dae
+[2.621s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/HeadYaw_0.10.stl
+[2.629s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LAnklePitch.dae
+[2.639s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LAnklePitch_0.10.stl
+[2.647s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LAnkleRoll.dae
+[2.656s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LAnkleRoll_0.10.stl
+[2.664s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LElbowRoll.dae
+[2.673s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LElbowRoll_0.10.stl
+[2.681s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger11.dae
+[2.690s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger11_0.10.stl
+[2.702s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger12.dae
+[2.716s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger12_0.10.stl
+[2.727s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger13.dae
+[2.737s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger13_0.10.stl
+[2.745s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger21.dae
+[2.754s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger21_0.10.stl
+[2.763s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger22.dae
+[2.777s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger22_0.10.stl
+[2.793s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger23.dae
+[2.806s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LFinger23_0.10.stl
+[2.817s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LHipPitch.dae
+[2.826s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LHipPitch_0.10.stl
+[2.835s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LHipRoll.dae
+[2.844s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LHipRoll_0.10.stl
+[2.853s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LHipYawPitch.dae
+[2.861s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LHipYawPitch_0.10.stl
+[2.870s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LKneePitch.dae
+[2.878s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LKneePitch_0.10.stl
+[2.887s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LShoulderPitch.dae
+[2.895s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LShoulderPitch_0.10.stl
+[2.904s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LShoulderRoll.dae
+[2.912s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LShoulderRoll_0.10.stl
+[2.921s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LThumb1.dae
+[2.929s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LThumb1_0.10.stl
+[2.938s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LThumb2.dae
+[2.947s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LThumb2_0.10.stl
+[2.955s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LWristYaw.dae
+[2.963s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/LWristYaw_0.10.stl
+[2.972s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RAnklePitch.dae
+[2.980s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RAnklePitch_0.10.stl
+[2.989s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RAnkleRoll.dae
+[2.997s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RAnkleRoll_0.10.stl
+[3.008s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RElbowRoll.dae
+[3.022s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RElbowRoll_0.10.stl
+[3.040s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger11.dae
+[3.056s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger11_0.10.stl
+[3.068s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger12.dae
+[3.077s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger12_0.10.stl
+[3.086s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger13.dae
+[3.094s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger13_0.10.stl
+[3.103s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger21.dae
+[3.112s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger21_0.10.stl
+[3.124s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger22.dae
+[3.139s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger22_0.10.stl
+[3.156s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger23.dae
+[3.171s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RFinger23_0.10.stl
+[3.187s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RHipPitch.dae
+[3.197s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RHipPitch_0.10.stl
+[3.206s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RHipRoll.dae
+[3.215s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RHipRoll_0.10.stl
+[3.224s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RHipYawPitch.dae
+[3.234s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RHipYawPitch_0.10.stl
+[3.242s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RKneePitch.dae
+[3.251s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RKneePitch_0.10.stl
+[3.259s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RShoulderPitch.dae
+[3.268s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RShoulderPitch_0.10.stl
+[3.280s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RShoulderRoll.dae
+[3.296s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RShoulderRoll_0.10.stl
+[3.314s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RThumb1.dae
+[3.332s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RThumb1_0.10.stl
+[3.351s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RThumb2.dae
+[3.368s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RThumb2_0.10.stl
+[3.384s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RWristYaw.dae
+[3.396s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/RWristYaw_0.10.stl
+[3.408s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/Torso.dae
+[3.426s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/meshes/V40/Torso_0.10.stl
+[3.444s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/nao_meshes/texture/textureNAO.png
+[3.460s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/ament_index/resource_index/package_run_dependencies/nao_description
+[3.470s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/ament_index/resource_index/parent_prefix_path/nao_description
+[3.479s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/environment/ament_prefix_path.sh
+[3.491s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/environment/ament_prefix_path.dsv
+[3.507s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/environment/path.sh
+[3.525s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/environment/path.dsv
+[3.542s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/local_setup.bash
+[3.559s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/local_setup.sh
+[3.573s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/local_setup.zsh
+[3.584s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/local_setup.dsv
+[3.592s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/package.dsv
+[3.600s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/ament_index/resource_index/packages/nao_description
+[3.609s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/cmake/nao_descriptionConfig.cmake
+[3.618s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/cmake/nao_descriptionConfig-version.cmake
+[3.626s] -- Symlinking: /home/ahmed/nao_ws/install/nao_description/share/nao_description/package.xml
+[3.637s] Invoked command in '/home/ahmed/nao_ws/build/nao_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/ahmed/nao_ws/build/nao_description
